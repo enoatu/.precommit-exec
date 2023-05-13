@@ -8,6 +8,9 @@ extends:
 parserOptions:
   ecmaVersion: 13
 rules:
-  "quotes":
+  quotes:
     - error
     - double
+  prefer-const: 'error'
+globals:
+  versions: true
