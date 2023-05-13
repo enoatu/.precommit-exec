@@ -12,7 +12,7 @@ Easy to use in any project, you can run the command before git commit to ensure 
 1. Place .precommit-exec **under the project root directory**
 2. Modify **lint-staged.config.js** to replace the commands to run before precommit.
 3. By default, eslint, prettier is included, but you can customize it to your liking.
-4. git commit 
+4. git commit your project including this .precommit-exec directory.
 5. Now all you need to do is have the people developing your project first run `cd .precommit-exec && yarn install` and you are ready to go.
 
 ## Details
