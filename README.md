@@ -14,3 +14,12 @@ This script ensures code quality by running commands before git commit. It's eas
 ## References
 - lint-staged: https://github.com/okonet/lint-staged
 - husky: https://github.com/typicode/husky
+
+## For Development
+Example command to generate a release file:
+
+```
+rsync -a --delete --exclude '.git/' --exclude 'node_modules/' . /tmp/precommit-exec && cd /tmp && zip -r precommit-exec-v1.0.0.zip precommit-exec
+```
+
+This command uses `rsync` to synchronize the contents of the project directory to `/tmp/precommit-exec`, excluding the `.git/` and `node_modules/` directories. It then creates a zip archive of the precommit-exec directory. You can adjust the version number and archive filename as necessary.
